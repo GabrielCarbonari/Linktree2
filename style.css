@@ -123,6 +123,10 @@ footer > a {
     display: none;
   }
 
+  #redes-sociais {
+    margin-top: -25px;
+  }
+
   .botao-especial > a {
     background-color: rgb(0, 0, 0);
     height: 40px;
@@ -133,5 +137,6 @@ footer > a {
 
   footer {
     margin-bottom: 20px;
+    margin-top: -200px;
   }
 }
