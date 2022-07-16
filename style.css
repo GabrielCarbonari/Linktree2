@@ -11,6 +11,8 @@
 
 html, body {
   background-color: rgb(29, 29, 29);
+  height: 100vh;
+  width: 100vw;
 }
 
 .imagem-foto{
@@ -39,6 +41,73 @@ h1 {
   margin: 20px;
 }
 
+p {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 12px; 
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+p::before {
+  content: '<';
+  color: rgb(43, 91, 163);
+  margin-right: 0.2rem;
+  font-size: 14px;
+}
+
+p::after {
+  content: '/>';
+  color: rgb(43, 91, 163);
+  font-size: 14px;
+}
+
+.botao-portfolio > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 230px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+  font-size: 15px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+}
+
+.botao-portfolio > a:hover {
+  background-color: rgb(29, 29, 29);
+  border: 2px solid white;
+  color: white;
+  transition: 300ms;
+}
+
+.botao-portfolio {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.botao-portfolio::after {
+  margin-left: 145px;
+  position: absolute;
+  top: 13px;
+  content: 'EM BREVE';
+  color: black;
+  font-family: 'Roboto Mono', monospace;;
+  font-size: 0.68rem;
+  padding-inline: 2.5rem;
+  transform: rotate(50deg);
+  background-color: yellow;
+  cursor: pointer;
+}
+
 #redes-sociais > ul > li > a > img {
   display: flex;
   margin-bottom: 5px;
@@ -55,13 +124,13 @@ h1 {
 #redes-sociais > ul > li > a {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   text-decoration: none;
   color: white;
   font-family: 'Roboto Mono', monospace;
   font-weight: normal;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 #redes-sociais > ul {
@@ -76,10 +145,9 @@ h1 {
 
 footer > a {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 240px;
+  margin-top: 180px;
   margin-bottom: 20px;
   text-decoration: none;
   color: white;
@@ -97,19 +165,26 @@ footer > a {
     width: 230px;
     border-radius: 20px;
     color: white;
-    padding-top: 9px;
     background-color: rgb(0, 52, 95);
     font-size: 15px;
   }
 
   .botao > a:hover {
-    background-color: rgb(0, 45, 72);
+    background-color: rgb(29, 29, 29);
+    border: 3px solid rgb(0, 45, 72);
+    color: white;
     transition: 300ms;
   }
 
   .botao-especial > a:hover {
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(29, 29, 29);
+    border: 3px solid rgb(20, 20, 20);
+    color: white;
     transition: 300ms;
+  }
+
+  #row2 {
+    margin-top: 0px;
   }
 
   #redes-sociais > ul {
@@ -124,7 +199,7 @@ footer > a {
   }
 
   #redes-sociais {
-    margin-top: -25px;
+    margin-top: -40px;
   }
 
   .botao-especial > a {
@@ -132,11 +207,10 @@ footer > a {
     height: 40px;
     width: 230px;
     border-radius: 20px;
-    padding-top: 9px;
   }
 
-  footer {
-    margin-bottom: 20px;
-    margin-top: -200px;
+  footer > a {
+    padding-bottom: 20px;
+    margin-top: 30px;
   }
 }
