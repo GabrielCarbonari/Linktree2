@@ -36,76 +36,27 @@ h1 {
   font-family: 'Roboto Mono', monospace;
   font-weight: normal;
   display: flex;
-  font-size: 20px;
+  font-size: 30px;
   justify-content: center;
   margin: 20px;
 }
 
-p {
-  display: flex;
-  justify-content: center;
-  color: white;
+span {
   font-family: 'Roboto Mono', monospace;
-  font-size: 12px; 
-  margin-top: -10px;
-  margin-bottom: 15px;
-}
-
-p::before {
-  content: '<';
-  color: rgb(43, 91, 163);
-  margin-right: 0.2rem;
-  font-size: 14px;
-}
-
-p::after {
-  content: '/>';
-  color: rgb(43, 91, 163);
-  font-size: 14px;
-}
-
-.botao-portfolio > a {
+  font-weight: normal;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  width: 230px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 500;
   font-size: 15px;
-  background-color: white;
-  text-decoration: none;
-  color: black;
-}
-
-.botao-portfolio > a:hover {
-  background-color: rgb(29, 29, 29);
-  border: 2px solid white;
-  color: white;
-  transition: 300ms;
-}
-
-.botao-portfolio {
-  display: flex;
   justify-content: center;
-  overflow: hidden;
-  position: relative;
+  margin: 20px;
+  margin-bottom: 70px;
 }
 
-.botao-portfolio::after {
-  margin-left: 145px;
-  position: absolute;
-  top: 13px;
-  content: 'EM BREVE';
-  color: black;
-  font-family: 'Roboto Mono', monospace;;
-  font-size: 0.68rem;
-  padding-inline: 2.5rem;
-  transform: rotate(50deg);
-  background-color: yellow;
-  cursor: pointer;
+p {
+  color: rgb(115, 180, 255);
+}
+
+#redes-sociais {
+  margin-top: 100px;
 }
 
 #redes-sociais > ul > li > a > img {
@@ -136,6 +87,41 @@ p::after {
 #redes-sociais > ul {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 40px;  
+}
+
+#redes-sociais2 {
+  padding-bottom: 50px;
+}
+
+#redes-sociais2 > ul > li > a > img {
+  display: flex;
+  margin-bottom: 5px;
+  width: 80px;
+  height: 80px;
+  border-radius: 35%;
+}
+
+#redes-sociais2 > ul > li {
+  text-decoration: none;
+  list-style: none;
+}
+
+#redes-sociais2 > ul > li > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+#redes-sociais2 > ul {
+  display: flex;
+  justify-content: space-evenly;
   margin-top: 40px;
 }
 
@@ -143,16 +129,8 @@ p::after {
   border: 2px solid rgba(24, 24, 24, 0.400);
 }
 
-footer > a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 180px;
-  margin-bottom: 20px;
-  text-decoration: none;
-  color: white;
-  font-family: 'Roboto Mono', monospace;
-  font-size: 12px;
+#redes-sociais2 > ul > li > a > img:hover {
+  border: 2px solid rgba(24, 24, 24, 0.400);
 }
 
 @media (max-width: 1000px) {
@@ -202,15 +180,25 @@ footer > a {
     margin-top: -40px;
   }
 
+  #redes-sociais2 > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #redes-sociais2 > ul > li > a > img {
+    display: none;
+  }
+
+  #redes-sociais2 {
+    margin-top: -40px;
+  }
+
   .botao-especial > a {
     background-color: rgb(0, 0, 0);
     height: 40px;
     width: 230px;
     border-radius: 20px;
-  }
-
-  footer > a {
-    padding-bottom: 20px;
-    margin-top: 30px;
   }
 }
