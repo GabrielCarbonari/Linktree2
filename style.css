@@ -133,6 +133,11 @@ p {
   border: 2px solid rgba(24, 24, 24, 0.400);
 }
 
+#retroa {
+  font-size: 14px;
+  text-align: center;
+}
+
 @media (max-width: 1000px) {
   .botao > a {
     display: flex;
