@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
 
 * {
   margin: 0;
@@ -16,15 +17,15 @@ html, body {
   width: 100vw;
 }
 
-.name:hover { text-decoration: none; color:rgb(145, 205, 255); }
+.name:hover { text-decoration: none; color:rgba(10, 10, 10, 0.999); }
 
-.surname:hover { text-decoration: none; color:rgb(145, 205, 255); }
+.surname:hover { text-decoration: none; color:rgba(10, 10, 10, 0.999); }
 
-.poa:hover { text-decoration: none; color:rgb(145, 205, 255); }
+.poa-flag:hover { border: 2px solid rgba(24, 24, 24, 0.400); }
 
-.rgs:hover { text-decoration: none; color:rgb(145, 205, 255); }
+.rgs-flag:hover { border: 2px solid rgba(24, 24, 24, 0.400); }
 
-.bra:hover { text-decoration: none; color:rgb(145, 205, 255); }
+.bra-flag:hover { border: 2px solid rgba(24, 24, 24, 0.400); }
 
 .name {
   color: rgb(255, 255, 255);
@@ -37,30 +38,58 @@ html, body {
   text-decoration: none; 
 }
 
-.poa {
-  color: rgb(115, 180, 255);
-  text-decoration: none; 
-  margin-right: 3px;
+.poa-flag {
+  width: 55px;
 }
 
-.rgs {
-  color: rgb(115, 180, 255);
-  text-decoration: none; 
-  margin-left: 3px;
+.rgs-flag {
+  width: 55px;
 }
 
-.bra {
-  color: rgb(115, 180, 255);
-  text-decoration: none; 
+.bra-flag {
+  width: 55px;
 }
 
-.flag {  
+.flags {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  text-align: center;
+}
+
+.cep {
+  display: flex;
+  justify-content: center;
+}
+
+#cep1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+}
+
+#cep2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+}
+
+#cep3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 7px;
+}
+
+.symbol {  
   display: flex;
   justify-content: center;
   margin-top: 160px;
 }
 
-.flag > a > img { 
+.symbol > a > img { 
   width: 60px;
 }
 
@@ -82,7 +111,7 @@ html, body {
 
 h1 {
   color: white;
-  font-family: 'Coming Soon', monospace;
+  font-family: 'Electrolize', monospace;
   font-weight: bold;
   display: flex;
   font-size: 30px;
@@ -90,18 +119,21 @@ h1 {
   margin: 20px;
 }
 
-span {
-  font-family: 'Coming Soon', monospace;
-  font-weight: bold;
+p {
   display: flex;
-  font-size: 15px;
   justify-content: center;
-  margin-bottom: 20px;
 }
 
-p {
-  color: rgb(115, 180, 255);
-}
+ span {
+  font-family: 'Electrolize', monospace;
+  font-weight: bold;
+  color: rgba(10, 10, 10, 0.999);
+  display: flex;
+  font-size: 14px;
+  justify-content: center;
+  margin-bottom: 20px;
+  cursor: default;
+} 
 
 #redes-sociais {
   margin-top: 100px;
