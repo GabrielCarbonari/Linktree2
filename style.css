@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
 
 * {
   margin: 0;
@@ -17,37 +18,57 @@ html, body {
   width: 100vw;
 }
 
-.name:hover { text-decoration: none; color:rgba(10, 10, 10, 0.999); }
+.name:hover { 
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.9);
+  color:rgb(0, 255, 13); 
+}
 
-.surname:hover { text-decoration: none; color:rgba(10, 10, 10, 0.999); }
+.surname:hover {  
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.9);
+  color:rgb(0, 255, 13);
+}
 
-.poa-flag:hover { border: 2px solid rgba(24, 24, 24, 0.400); }
+.poa-flag:hover { 
+  border: 2px solid rgba(24, 24, 24, 0.400); 
+}
 
-.rgs-flag:hover { border: 2px solid rgba(24, 24, 24, 0.400); }
+.rgs-flag:hover { 
+  border: 2px solid rgba(24, 24, 24, 0.400); 
+}
 
-.bra-flag:hover { border: 2px solid rgba(24, 24, 24, 0.400); }
+.bra-flag:hover { 
+  border: 2px solid rgba(24, 24, 24, 0.400); 
+}
 
 .name {
   color: rgb(255, 255, 255);
   text-decoration: none; 
   margin-right: 10px;
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.9);
 }
 
 .surname {
   color: rgb(255, 255, 255);
   text-decoration: none; 
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.9);
+}
+
+.name-color {
+}
+
+.surname-color {
 }
 
 .poa-flag {
-  width: 55px;
+  width: 50px;
 }
 
 .rgs-flag {
-  width: 55px;
+  width: 50px;
 }
 
 .bra-flag {
-  width: 55px;
+  width: 50px;
 }
 
 .flags {
@@ -60,13 +81,16 @@ html, body {
 .cep {
   display: flex;
   justify-content: center;
+  margin-top: 3px;
+  text-align: center;
+  text-shadow: 1px 1px 0px rgba(43, 43, 43, 0.9);
 }
 
 #cep1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 10px;
+  margin: 15px;
 }
 
 #cep2 {
@@ -80,7 +104,6 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 7px;
 }
 
 .symbol {  
@@ -102,7 +125,7 @@ html, body {
   border-radius: 50%;
   border-width: 3px;
   border-style: solid;
-  border-color: white;
+  border-color: rgb(0, 255, 13);
   padding: 5px;
   margin-top: 20px;
   width: 110px;
@@ -119,15 +142,18 @@ h1 {
   margin: 20px;
 }
 
+.bar {
+}
+
 p {
   display: flex;
   justify-content: center;
 }
 
  span {
-  font-family: 'Electrolize', monospace;
-  font-weight: bold;
-  color: rgba(10, 10, 10, 0.999);
+  font-family: 'Orbitron', monospace;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.9);
   display: flex;
   font-size: 14px;
   justify-content: center;
@@ -206,11 +232,11 @@ p {
 }
 
 #redes-sociais > ul > li > a > img:hover {
-  border: 2px solid rgba(24, 24, 24, 0.400);
+  border: 3px solid rgba(24, 24, 24, 0.400);
 }
 
 #redes-sociais2 > ul > li > a > img:hover {
-  border: 2px solid rgba(24, 24, 24, 0.400);
+  border: 3px solid rgba(24, 24, 24, 0.400);
 }
 
 #retroa > a {
