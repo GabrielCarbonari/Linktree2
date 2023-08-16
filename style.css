@@ -20,7 +20,7 @@ html, body {
 
 .name:hover { 
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.9);
-  color:rgb(0, 255, 13); 
+  color:rgb(0, 255, 13);
 }
 
 .surname:hover {  
@@ -51,12 +51,6 @@ html, body {
   color: rgb(255, 255, 255);
   text-decoration: none; 
   text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.9);
-}
-
-.name-color {
-}
-
-.surname-color {
 }
 
 .poa-flag {
@@ -142,7 +136,29 @@ h1 {
   margin: 20px;
 }
 
-.bar {
+.name-rps {
+  display: none;
+}
+
+.botao > a > h1 {
+  display: none;
+}
+
+.botao > .button-word {
+  font-family: 'Orbitron', monospace;
+  font-weight: 800;
+  cursor: default;
+}
+
+.botao-especial > .button-word {
+  font-family: 'Orbitron', monospace;
+  font-weight: 800;
+  cursor: default;
+}
+
+.button-word {
+  text-shadow: 1px 1px 0px rgba(50, 50, 50, 0.9);
+  color: rgba(0, 0, 0, 0.9);
 }
 
 p {
@@ -185,8 +201,8 @@ p {
   align-items: center;
   text-decoration: none;
   color: white;
-  font-family: 'Coming Soon', monospace;
-  font-weight: normal;
+  font-family: 'Orbitron', monospace;
+  font-weight: 800;
   margin-top: 10px;
 }
 
@@ -220,8 +236,8 @@ p {
   align-items: center;
   text-decoration: none;
   color: white;
-  font-family: 'Coming Soon', monospace;
-  font-weight: normal;
+  font-family: 'Orbitron', monospace;
+  font-weight: 800;
   margin-top: 10px;
 }
 
@@ -239,8 +255,8 @@ p {
   border: 3px solid rgba(24, 24, 24, 0.400);
 }
 
-#retroa > a {
-  font-size: 14px;
+#retroa {
+  font-size: 13px;
   text-align: center;
   width: min-content;
 }
@@ -257,6 +273,28 @@ p {
     color: white;
     background-color: rgb(0, 52, 95);
     font-size: 15px;
+  }
+
+  .botao > a > h1 {
+    display: flex;
+    font-size: 16px;
+    font-family: 'Orbitron', monospace;
+    font-weight: 600;
+  }
+
+  .botao > p {
+    display: none;
+  }
+
+  .botao-especial > a > h1 {
+    display: flex;
+    font-size: 16px;
+    font-family: 'Orbitron', monospace;
+    font-weight: 600;
+  }
+
+  .botao-especial > p {
+    display: none;
   }
 
   .botao > a:hover {
