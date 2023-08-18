@@ -295,25 +295,25 @@ p {
   background-clip: text;
   -webkit-background-clip: text;
   transition: 0.5s;
-  -webkit-text-stroke: 1px #032500;
+  -webkit-text-stroke: 1px #054288;
   font-variation-settings: "wght" 400, "ital" 1;
   font-size: 30px;
   text-align: center;
   color: transparent;
   font-family: 'Race Sport', monospace;
   text-shadow: 0px 0px 0px #ffffff,
-    2px 2px 0px #aeff34,
-    4px 4px 0px #39ff12,
-    6px 6px 0px #0c8901,
-    8px 8px 0px #064900,
+    2px 2px 0px #008cff,
+    4px 4px 0px #055bdb,
+    6px 6px 0px #08549c,
+    8px 8px 0px #052a4d,
     10px 10px 0px #000000e6;
   cursor: pointer;
 }
 
 .name:hover {
-  -webkit-text-stroke: 0px rgb(200, 200, 200);
+  -webkit-text-stroke: 1px #08549c;
   font-variation-settings: "wght" 100, "ital" 1;
-  color: #9bff00;
+  color: #32adff;
   text-shadow: 3px 3px 0px #000000e6;
 }
 
@@ -321,25 +321,25 @@ p {
   background-clip: text;
   -webkit-background-clip: text;
   transition: all 0.5s;
-  -webkit-text-stroke: 1px #032500;
+  -webkit-text-stroke: 1px #054288;
   font-variation-settings: "wght" 400, "ital" 1;
   font-size: 30px;
   text-align: center;
   color: transparent;
   font-family: 'Race Sport', monospace;
   text-shadow: 0px 0px 0px #ffffff,
-    2px 2px 0px #aeff34,
-    4px 4px 0px #39ff12,
-    6px 6px 0px #0c8901,
-    8px 8px 0px #064900,
+  2px 2px 0px #008cff,
+  4px 4px 0px #055bdb,
+  6px 6px 0px #08549c,
+  8px 8px 0px #052a4d,
     10px 10px 0px #000000e6;
   cursor: pointer;
 }
 
 .surname:hover {
-  -webkit-text-stroke: 0px rgb(200, 200, 200);
+  -webkit-text-stroke: 1px #08549c;
   font-variation-settings: "wght" 100, "ital" 1;
-  color: #9bff00;
+  color: #32adff;
   text-shadow: 3px 3px 0px #000000e6;
 }
 
@@ -448,5 +448,57 @@ p {
 
   .flag {  
     margin-top: 50px;
+  }
+
+  .name {
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px #054288;
+    font-variation-settings: "wght" 400, "ital" 1;
+    font-size: 20px;
+    text-align: center;
+    color: transparent;
+    font-family: 'Race Sport', monospace;
+    text-shadow: 0px 0px 0px #ffffff,
+      2px 2px 0px #008cff,
+      4px 4px 0px #055bdb,
+      6px 6px 0px #08549c,
+      8px 8px 0px #052a4d,
+      10px 10px 0px #000000e6;
+    cursor: pointer;
+  }
+  
+  .name:hover {
+    -webkit-text-stroke: 1px #08549c;
+    font-variation-settings: "wght" 100, "ital" 1;
+    color: #32adff;
+    text-shadow: 3px 3px 0px #000000e6;
+  }
+  
+  .surname {
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: all 0.5s;
+    -webkit-text-stroke: 1px #054288;
+    font-variation-settings: "wght" 400, "ital" 1;
+    font-size: 20px;
+    text-align: center;
+    color: transparent;
+    font-family: 'Race Sport', monospace;
+    text-shadow: 0px 0px 0px #ffffff,
+    2px 2px 0px #008cff,
+    4px 4px 0px #055bdb,
+    6px 6px 0px #08549c,
+    8px 8px 0px #052a4d,
+      10px 10px 0px #000000e6;
+    cursor: pointer;
+  }
+  
+  .surname:hover {
+    -webkit-text-stroke: 1px #08549c;
+    font-variation-settings: "wght" 100, "ital" 1;
+    color: #32adff;
+    text-shadow: 3px 3px 0px #000000e6;
   }
 }
