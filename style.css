@@ -175,7 +175,7 @@ h1 {
   cursor: default;
   text-shadow: 1px 1px 0px rgba(50, 50, 50, 0.9);
   color: rgba(0, 0, 0, 0.9);
-  font-size: 17px;
+  font-size: 15px;
   display: flex;
   justify-content: center;
   margin-top: 5px;
@@ -190,7 +190,7 @@ p {
   font-weight: 900;
   color: rgba(0, 0, 0, 0.9);
   display: flex;
-  font-size: 14px;
+  font-size: 12px;
   justify-content: center;
   margin-bottom: 20px;
   cursor: default;
@@ -289,7 +289,7 @@ p {
   justify-content: center;
   align-items: center;
   white-space: wrap;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 @font-face {
