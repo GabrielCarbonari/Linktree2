@@ -19,16 +19,6 @@ html, body {
   width: 100vw;
 }
 
-.name:hover { 
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.9);
-  color:rgb(0, 255, 13);
-}
-
-.surname:hover {  
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.9);
-  color:rgb(0, 255, 13);
-}
-
 .poa-flag:hover { 
   border: 2px solid rgba(24, 24, 24, 0.400); 
 }
@@ -44,14 +34,44 @@ html, body {
 .name {
   color: rgb(255, 255, 255);
   text-decoration: none; 
-  margin-right: 10px;
   text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.9);
+  margin-bottom: 5px;
+}
+
+.name-color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  text-align: center;
+}
+
+.surname-color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  text-align: center;
 }
 
 .surname {
   color: rgb(255, 255, 255);
   text-decoration: none; 
   text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.9);
+  
+}
+
+.bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myname {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
 }
 
 .poa-flag {
@@ -84,6 +104,7 @@ html, body {
   width: 100%;
   box-shadow: 2px -2px rgba(42, 42, 42, 0.9);
   margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 .cep {
@@ -151,22 +172,16 @@ h1 {
   margin: 20px;
 }
 
-.name-rps {
-  display: none;
-}
-
 .botao {
   display: flex;
   justify-content: center;
+  height: 80px;
+  width: 80px;
 }
 
 .botao-especial {
   display: flex;
   justify-content: center;
-}
-
-.botao > a > h1 {
-  display: none;
 }
 
 .button-word {
@@ -199,10 +214,12 @@ p {
 .divisao {
   max-width: 80px;
   text-align: center;
+  height: 123px;
 }
 
 .divisao2 {
   max-width: 80px;
+  height: 123px;
 }
 
 #redes-sociais {
@@ -220,16 +237,6 @@ p {
   list-style: none;
 }
 
-#redes-sociais > ul > div > li > a {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: white;
-  font-family: 'Orbitron', monospace;
-  font-weight: 800;
-  margin-top: 10px;
-}
 
 .imagelogo {
   display: inline-block;
@@ -247,7 +254,7 @@ p {
 
 #redes-sociais2 > ul > div > li > a > img {
   display: flex;
-  margin-bottom: 5px;
+  
   width: 80px;
   height: 80px;
   border-radius: 35%;
@@ -256,18 +263,6 @@ p {
 #redes-sociais2 > ul > div > li {
   text-decoration: none;
   list-style: none;
-}
-
-#redes-sociais2 > ul > div > li > a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: white;
-  font-family: 'Orbitron', monospace;
-  font-weight: 800;
-  margin-top: 10px;
 }
 
 #redes-sociais2 > ul {
@@ -300,77 +295,76 @@ p {
 }
 
 .name {
+  -webkit-text-stroke: 1px #059700;
+  font-variation-settings: "wght" 100, "ital" 1;
+  color: #88ff00;
+  text-shadow: 3px 3px 0px #000000e6;
   background-clip: text;
   -webkit-background-clip: text;
   transition: 0.5s;
-  -webkit-text-stroke: 1px #054288;
-  font-variation-settings: "wght" 400, "ital" 1;
   font-size: 30px;
   text-align: center;
-  color: transparent;
   font-family: 'Race Sport', monospace;
-  text-shadow: 0px 0px 0px #ffffff,
-    2px 2px 0px #008cff,
-    4px 4px 0px #055bdb,
-    6px 6px 0px #08549c,
-    8px 8px 0px #052a4d,
-    10px 10px 0px #000000e6;
   cursor: pointer;
 }
 
 .name:hover {
-  -webkit-text-stroke: 1px #08549c;
-  font-variation-settings: "wght" 100, "ital" 1;
-  color: #32adff;
-  text-shadow: 3px 3px 0px #000000e6;
+  -webkit-text-stroke: 1px #158000;
+  font-variation-settings: "wght" 400, "ital" 1;
+  color: transparent;
+  text-shadow: 0px 0px 0px #ffffff,
+  2px 2px 0px #c8ff00,
+  4px 4px 0px #27eb00,
+  6px 6px 0px #088f0e,
+  8px 8px 0px #003d03,
+  10px 10px 0px #000000e6;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: 0.5s;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Race Sport', monospace;
+  cursor: pointer;
 }
 
 .surname {
+  -webkit-text-stroke: 1px #059700;
+  font-variation-settings: "wght" 100, "ital" 1;
+  color: #88ff00;
+  text-shadow: 3px 3px 0px #000000e6;
   background-clip: text;
   -webkit-background-clip: text;
   transition: all 0.5s;
-  -webkit-text-stroke: 1px #054288;
-  font-variation-settings: "wght" 400, "ital" 1;
   font-size: 30px;
   text-align: center;
-  color: transparent;
   font-family: 'Race Sport', monospace;
-  text-shadow: 0px 0px 0px #ffffff,
-  2px 2px 0px #008cff,
-  4px 4px 0px #055bdb,
-  6px 6px 0px #08549c,
-  8px 8px 0px #052a4d,
-    10px 10px 0px #000000e6;
   cursor: pointer;
 }
 
 .surname:hover {
-  -webkit-text-stroke: 1px #08549c;
-  font-variation-settings: "wght" 100, "ital" 1;
-  color: #32adff;
-  text-shadow: 3px 3px 0px #000000e6;
+  -webkit-text-stroke: 1px #158000;
+  font-variation-settings: "wght" 400, "ital" 1;
+  color: transparent;
+  text-shadow: 0px 0px 0px #ffffff,
+  2px 2px 0px #c8ff00,
+  4px 4px 0px #27eb00,
+  6px 6px 0px #088f0e,
+  8px 8px 0px #003d03,
+  10px 10px 0px #000000e6;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 0.5s;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Race Sport', monospace;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
-  .botao > a {
+
+  .together {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 230px;
-    border-radius: 20px;
-    color: white;
-    background-color: rgb(0, 52, 95);
-    font-size: 15px;
-  }
-
-  .divisao {
-    max-width: 230px;
-  }
-
-  .divisao2 {
-    max-width: 230px;
+    justify-content: space-evenly;  
   }
 
   .botao > a > h1 {
@@ -380,10 +374,6 @@ p {
     font-weight: 600;
   }
 
-  .botao > p {
-    display: none;
-  }
-
   .botao-especial > a > h1 {
     display: flex;
     font-size: 16px;
@@ -391,20 +381,14 @@ p {
     font-weight: 600;
   }
 
-  .button-word {
-    display: none;
-  }
-
   .botao > a:hover {
     background-color: rgb(29, 29, 29);
-    border: 3px solid rgb(0, 45, 72);
     color: white;
     transition: 300ms;
   }
 
   .botao-especial > a:hover {
     background-color: rgb(29, 29, 29);
-    border: 3px solid rgb(20, 20, 20);
     color: white;
     transition: 300ms;
   }
@@ -414,11 +398,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
-  }
-  
-  #redes-sociais > ul > div > li > a > img {
-    display: none;
+    margin: 0;
   }
 
   .flags {
@@ -426,37 +406,25 @@ p {
   }
 
   #redes-sociais {
-    margin-top: -40px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0;
   }
+
+ 
 
   #redes-sociais2 > ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  #redes-sociais2 > ul > div > li > a > img {
-    display: none;
+    margin: 0;
   }
 
   #redes-sociais2 {
-    margin-top: -40px;
-  }
-
-  .botao-especial > a {
-    background-color: rgb(0, 0, 0);
-    height: 40px;
-    width: 230px;
-    border-radius: 20px;
-  }
-
-  #retroa > a {
-    width: 230px;
-  }
-
-  #retroatext {
-    display: none;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0;
   }
 
   .flag {  
@@ -464,54 +432,68 @@ p {
   }
 
   .name {
+    -webkit-text-stroke: 1px #059700;
+    font-variation-settings: "wght" 100, "ital" 1;
+    color: #88ff00;
+    text-shadow: 3px 3px 0px #000000e6;
     background-clip: text;
     -webkit-background-clip: text;
     transition: 0.5s;
-    -webkit-text-stroke: 1px #054288;
-    font-variation-settings: "wght" 400, "ital" 1;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
-    color: transparent;
     font-family: 'Race Sport', monospace;
-    text-shadow: 0px 0px 0px #ffffff,
-      2px 2px 0px #008cff,
-      4px 4px 0px #055bdb,
-      6px 6px 0px #08549c,
-      8px 8px 0px #052a4d,
-      10px 10px 0px #000000e6;
     cursor: pointer;
   }
   
   .name:hover {
-    -webkit-text-stroke: 1px #08549c;
-    font-variation-settings: "wght" 100, "ital" 1;
-    color: #32adff;
-    text-shadow: 3px 3px 0px #000000e6;
+    -webkit-text-stroke: 1px #158000;
+    font-variation-settings: "wght" 400, "ital" 1;
+    color: transparent;
+    text-shadow: 0px 0px 0px #ffffff,
+    2px 2px 0px #c8ff00,
+    4px 4px 0px #27eb00,
+    6px 6px 0px #088f0e,
+    8px 8px 0px #003d03,
+    10px 10px 0px #000000e6;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: 0.5s;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Race Sport', monospace;
+    cursor: pointer;
   }
   
   .surname {
+    -webkit-text-stroke: 1px #059700;
+    font-variation-settings: "wght" 100, "ital" 1;
+    color: #88ff00;
+    text-shadow: 3px 3px 0px #000000e6;
     background-clip: text;
     -webkit-background-clip: text;
     transition: all 0.5s;
-    -webkit-text-stroke: 1px #054288;
-    font-variation-settings: "wght" 400, "ital" 1;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
-    color: transparent;
     font-family: 'Race Sport', monospace;
-    text-shadow: 0px 0px 0px #ffffff,
-    2px 2px 0px #008cff,
-    4px 4px 0px #055bdb,
-    6px 6px 0px #08549c,
-    8px 8px 0px #052a4d,
-      10px 10px 0px #000000e6;
     cursor: pointer;
   }
   
   .surname:hover {
-    -webkit-text-stroke: 1px #08549c;
-    font-variation-settings: "wght" 100, "ital" 1;
-    color: #32adff;
-    text-shadow: 3px 3px 0px #000000e6;
+    -webkit-text-stroke: 1px #158000;
+    font-variation-settings: "wght" 400, "ital" 1;
+    color: transparent;
+    text-shadow: 0px 0px 0px #ffffff,
+    2px 2px 0px #c8ff00,
+    4px 4px 0px #27eb00,
+    6px 6px 0px #088f0e,
+    8px 8px 0px #003d03,
+    10px 10px 0px #000000e6;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: all 0.5s;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Race Sport', monospace;
+    cursor: pointer;
   }
 }
