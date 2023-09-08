@@ -313,7 +313,7 @@ p {
   justify-content: space-evenly;
 }
 
-#redes-sociais4 > ul > div > li > a > img {
+#redes-sociais4 > ul > div > li > img {
   display: flex; 
   width: 70px;
   border-radius: 35%;
